@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +10,78 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="/Assets/witflix-logo.png">
+        <img class="logo" src="/Assets/witflix-logo.png" alt="WitFlix Logo">
         <nav>
-            <a href="">Topic 1</a>
-            <a href="">Topic 2</a>
-            <a href="">Topic 3</a>
-            <a href="">Topic 4</a>
+            <a href="#">Home</a>
+            <a href="#">Tv Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Recently Added</a>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="Search..">
+        <div class="user-control-panel">
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <img src="/Assets/search-icon.png" alt="Search Icon">
+            </div>
             <i class="fa fa-bell"></i>
-
-
+            <img class="profile" src="/Assets/Profile-pictures.png" alt="User Profile">
         </div>
-
     </header>
+    <main class="hero-content">
+        <h1>MOVIE NAME</h1>
+        <div class="movie-info">
+            <div class="user-ratings" >
+                <span class="user-ratings"></span>
+                <span class="imdb-ratings"></span>
+            </div>
+            <span class="maturity-rating">16+</span>
+            <span class="duration">2h 21min</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id justo et nulla ultrices aliquet.</p>
+        <ul class="movie-details">
+            <li>
+                <p><span>Starring:</span> Lorem Ipsum, Lorem Piksum</p>
+            </li>
+            <li>
+                <p><span>Genre:</span> Action, Drama</p>
+            </li>
+            <li>
+                <p><span>Tags:</span> Adventure, Thriller, Family</p>
+            </li>
+            
+        </ul>
+        <div class="btn btn-lg">
+            <i class="fa fa-play"></i>
+            <span>Play Now</span>
+        </div>
+        <section>
+            <div class="suggestion-row"></div>
+            <div class="suggestion-row"></div>
+            <div class="suggestion-row">
+                <div class="suggestion-title">
+                    <h2></h2>
+                    <a href=""></a>
+                </div>
+                <div class="suggestion-content">
+                    <div class="suggestion-item">
+                        <div class="suggestion-item-content">
+                            <h3></h3>
+                            <div class="suggestion-details"></div>
+                            <div class="btn btn-md">
+                                <i class="fa fa-play"></i>
+                                <span>Play Now</span>
+                        </div>
+                    </div>
+                    <div class="suggestion-item"></div>
+                    <div class="suggestion-item"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
     
 </body>
 </html>
