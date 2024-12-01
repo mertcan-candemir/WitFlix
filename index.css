@@ -11,8 +11,11 @@ header{
     color: black;
     padding: 10px 0px;
 }
+.mobile{
+    display: none;
+}
 header .logo{
-    height: 100px;
+    height: 75px;
     width: auto; 
 }
 header nav{
@@ -36,16 +39,12 @@ header .user-control-panel{
    gap: 1rem;
 
 }
-header .search{
-   
-    
-}
 header .search img{
     height: 1rem;
     width: auto;
 }
 .profile{
-    width: 75px;
+    width: 60px;
 
 }
 .hero-content {
@@ -203,4 +202,38 @@ header .search img{
 .footer-apps .app-buttons img {
     width: 120px;
     height: auto; 
+}
+@media(max-width:600px){
+    .desktop{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mobile{
+        display: flex;
+        margin: auto;
+    }
+    .hero-content {
+      
+        background-size: cover;
+       
+    }
+    .movie-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .movie-card{
+        
+        width: 180px ;
+        height:180px;
+        margin-bottom: 10px;
+    }
+
+    
+    
+
 }
